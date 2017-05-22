@@ -11,7 +11,8 @@ header {
 	margin: 0 auto;
 }
 .slaiders {
-	background-color: #eeeeee;
+	background-color: #;
+	min-height: 430px;
 }
 .advantages {
 	width:300px;
@@ -31,5 +32,48 @@ header {
 	background-color: gray;
 	float: left;
 }
+.white-block {
+	width: 100%;
+	min-height: 200px;
+	float: left;
+	border-width: 1px solid #eeeeee;
+}
+.logo_s {
+	display: inline;
+	border-right: 2px solid #eeeeee;
+}
+.map {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	height : 416px;
+	margin-top : 80px;
+	background: url(../img/map.png);
+}
+
+.address {
+	background-color: #ffffff;
+	display : block;
+	width : 319px;
+	height: 308px;
+	margin-left : 140px;
+	margin-top : 54px;
+}
+.addres h5 {
 
 
+}
+.addres p {
+
+}
+
+.addres span {
+
+}
+.addres button {
+
+}
+footer {
+	min-height: 200px;
+}
