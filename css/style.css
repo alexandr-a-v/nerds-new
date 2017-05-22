@@ -2,3 +2,32 @@
 	margin: 0;	
 	padding: 0;
 }
+header {
+	width: 100%;
+	background-color: #eeeeee;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.slaiders {
+	background-color: #eeeeee;
+}
+.advantages {
+	width:300px;
+	min-height: 350px;
+	float: left;
+	margin-right: 100px;
+}
+.text {
+	width:60%;
+	min-height: 500px;
+	background-color: #123;
+	float: left;
+}
+.class {
+	width:40%;
+	min-height: 500px;
+	background-color: gray;
+	float: left;
+}
