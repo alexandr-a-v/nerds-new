@@ -6,6 +6,50 @@ header {
 	width: 100%;
 	background-color: #eeeeee;
 }
+.logo {
+	padding-top: 48px;
+	float: left;
+}
+nav {
+	padding-top: 82px;
+	padding-left: 300px;
+	padding-bottom: 30px;
+	width: 450px;
+	justify-content: space-between;
+	display: flex;
+}
+h1 {
+	font-family : Roboto medium;
+	font-size: 55px;
+}
+.osn {
+	background-color: #eeeeee;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.aside {
+	width: 265px;
+	height: 850px;
+	background-color: #fbd0d0;
+	float: left;
+}
+.section {
+	width: 350px;
+	height: 616px;
+	background-color: #8fa3c8;
+	float: left;
+	margin-left: 135px;
+	margin-bottom: 30px;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+article {
+	width: 100%;
+	background-color: #eeeeee;
+}
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -13,6 +57,7 @@ header {
 .slaiders {
 	background-color: #;
 	min-height: 430px;
+	margin-bottom: 80px;
 }
 .advantages {
 	width:300px;
