@@ -5,11 +5,11 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sprites.css">	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<title>nerds</title>
+	<title>Nerds</title>
 </head>
 <body>
 	<header>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="logo">
 				<img src="img/nerds-logo.png" alt="logo"></a>
 			</div>
@@ -19,42 +19,51 @@
 					<li><a href="#" target="_blank">клиенты</a></li>
 					<li><a href="index-shop.html" target="_blank">магазин</a></li>
 					<li><a href="#" target="_blank">контакты</a></li>
-					<li><button class="basket">корзина</button></li>
 				</ul>
-			</nav>			
+			</nav>
+			<div class="basket">
+				<button>корзина</button>
+			</div>
 		</div>
 	</header>
 	<main>
 		<article>
 			<div class="container">
-				<div class="slaides">
-					<div class="controls">
-						<input type="checkbox">
-						<input type="checkbox">
-						<input type="checkbox">
+				<div class="slider-block">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>	  			
+					<div class="slider slider-1">
+						<div class="slider-info">
+							<h1>Долго, дорого,<br> скрупулезно.</h1>
+							<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+							<a href="#" class="buttons button-1">Узнать больше</a>
+						</div>
 					</div>
-					<div class="slide">
-						<img src="" alt="">
-						<h1>Долго, дорого,  скрупулезно.</h1>
-						<p>Математически выверенный дизайн  для вашего сайта или мобильного приложения</p>
-						<button type="btn">Узнать больше</button>
+					<div class="slider slider-2">  			   
+						<div class="slider-info">
+							<h1>Любим математику<br> как никто другой</h1>
+							<p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+							<a href="#" class="buttons button-1">Узнать больше</a>
+						</div>  				
 					</div>
-					<div class="slide">
-						<img src="" alt="">
-						<h1></h1>
-						<p></p>	
-					</div>
-					<div class="slide">
-						<img src="" alt="">
-						<h1></h1>
-						<p></p>	
-					</div>
-					
+					<div class="slider slider-3">
+						<div class="slider-info">
+							<h1>Только ночь,<br> только хардкор</h1>
+							<p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+							<a href="#" class="buttons button-1">Узнать больше</a>
+						</div>  			  		
+					</div> 
 				</div>
 			</div>	
 		</article>
 		<section>
-			<div class="container">
+			<div class="container clearfix">
 				<div class="advantages">
 					<img src="img/illustration-1.png" alt="illustration-1">
 					<h2>Веб-сайты</h2>
@@ -76,7 +85,7 @@
 			</div>
 		</section>
 			<div class="container">
-				<div class="studio">
+				<div class="studio clearfix">
 					<div class="text">
 						<h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
 						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.Работаем не покладая рук, как роботы.</p>
@@ -87,9 +96,13 @@
 							<li>Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
-					<div class="class"></div>
+					<div class="block">
+						<div class="logo-block">
+							<img src="img/nerds-illustration.png" alt="nerds">
+						</div>
+					</div>
 				</div>
-				<div class="white-block">
+				<div class="white-block clearfix">
 					<div class="logo_s">
 						<img src="img/logo-1.png" alt="logo-1">
 					</div>
@@ -106,21 +119,28 @@
 			</div>
 	</main>
 		<div class="map">
-			<div class="address">
-				<h5>NЁRDS DESIGN STUDIO</h5>
-				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8,</p>
-				<span>тел. +7 (812) 275-75-75</span>
-				<button onclick="button">напишите нам</button>
+		    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.320894615736744!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460382549820"
+		    style="border:0" allowfullscreen></iframe>
+			 <div class="map-form">
+				<h3>NЁRDS DESIGN STUDIO</h3>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<button  class="btn-modal">напишите нам</button>
 			</div>
 		</div>
 
+
 	<footer>
-		<div class="container">
-			<i></i>
-			<i></i>
-			<i></i>
-			<h5>Давайте дружить, это выгодно!</h5>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+		<div class="container clearfix">
+			<div class="social-block">
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+			<div class="slogan">
+				<h5>Давайте дружить, это выгодно!</h5>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
 		</div>
 	</footer>
 

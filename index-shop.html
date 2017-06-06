@@ -27,59 +27,175 @@
 		</div>
 	</header>
 	<main>
-		<div class="osn">
-			<h1>Магазин готовых шаблонов</h1>
-		</div>
 		<div class="container">
-			<aside>
-				<div class="aside">
-					
+			<div class="shop-columns clearfix">
+			<div class="shop-column-left">
+			  <form action="/echo" method="post">
+				<h3>Стоимость:</h3>
+				<div class="shop-filter">
+					<div class="filter-controls">
+						<div class="scale"><div class="bar"></div>
+						<div class="toggle min-toggle"></div>
+						<div class="toggle max-toggle"></div>
+					</div>
 				</div>
-			</aside>
-			<section>
-				<div class="section">
-					
+				  <div class="input-price">
+					от <input class="min-price" type="text" value="0">
+					до <input class="max-price" type="text" value="15 000">
+				  </div>
 				</div>
-				<div class="section">
-					
+				<h3>Сетка:</h3>
+				<input type="radio" name="grid" id="adaptive-id">
+				<label for="adaptive-id">Адаптивная</label>
+				<input type="radio" name="grid" id="fixed-id">
+				<label for="fixed-id">Фиксированная</label>
+				<input type="radio" name="grid" id="rubber-id">
+				<label for="rubber-id">Резиновая</label>
+				<h3 class="form-feature-title">Особенности:</h3>
+				<input type="checkbox" name="slider" id="slider-id">
+				<label for="slider-id">Слайдер</label>
+				<input type="checkbox" name="block-features" id="block-features-id">
+				<label for="block-features-id">Блок преимуществ</label>
+				<input type="checkbox" name="news" id="news-id">
+				<label for="news-id">Новости</label><br>
+				<input type="checkbox" name="gallery" id="gallery-id">
+				<label for="gallery-id">Галерея</label><br>
+				<input type="checkbox" name="basket" id="basket-id">
+				<label for="basket-id">Корзина</label>
+				<input type="submit" name="submit-show" value="Показать">
+			  </form>
+			</div>
+			<div class="shop-column-right">
+			  <ul class="list-sorting">
+				<li>Сортировать:</li>
+				<li><a href="#">По цене</a></li>
+				<li><a href="#">По типу</a></li>
+				<li><a href="#">По функционалу</a></li>
+				<li><a class="dir dir-up" href="#"></a></li>
+				<li><a class="dir dir-down" href="#"></a></li>
+			  </ul>
+			  <div class="catalog">
+				<article class="catalog-item">
+				  <div class="item-controls">
+					<button type="button"></button>
+					<button type="button"></button>
+					<button type="button"></button>
+				  </div>
+				  <div class="catalog-content">
+					<h2>AVIATOR</h2>
+					<p>Одностраничный макет с авторским дизайном</p>
+					<button class="item-price btn" type="button">10 000 р.</button>
+				  </div>
+				</article>
+				<article class="catalog-item">
+				  <div class="item-controls">
+					<button type="button"></button>
+					<button type="button"></button>
+					<button type="button"></button>
+				  </div>
+				  <div class="catalog-content">
+					<h2>SUNSET</h2>
+					<p>Сайт-визитка с личным кабинетом</p>
+					<button class="item-price btn" type="button">10 000 р.</button>
+				  </div>
+				</article>
+				<article class="catalog-item">
+				  <div class="item-controls">
+					<button type="button"></button>
+					<button type="button"></button>
+					<button type="button"></button>
+				  </div>
+				  <div class="catalog-content">
+					<h2>FORTE</h2>
+					<p>Отличный макет для личного блога</p>
+					<button class="item-price btn" type="button">10 000 р.</button>
+				  </div>
+				</article>
+				<article class="catalog-item">
+				  <div class="item-controls">
+					<button type="button"></button>
+					<button type="button"></button>
+					<button type="button"></button>
+				  </div>
+				  <div class="catalog-content">
+					<h2>MODERN</h2>
+					<p>Сайт для ресторана быстрого питания</p>
+					<button class="item-price btn" type="button">10 000 р.</button>
+				  </div>
+				</article>
+				<article class="catalog-item">
+				  <div class="item-controls">
+					<button type="button"></button>
+					<button type="button"></button>
+					<button type="button"></button>
+				  </div>
+				  <div class="catalog-content">
+					<h2>AVENUE</h2>
+					<p>Макет для блога о путешествиях</p>
+					<button class="item-price btn" type="button">10 000 р.</button>
+				  </div>
+				</article>
+				<article class="catalog-item">
+				  <div class="item-controls">
+					<button type="button"></button>
+					<button type="button"></button>
+					<button type="button"></button>
+				  </div>
+				  <div class="catalog-content">
+					<h2>DOVETAIL</h2>
+					<p>Интернет-магазин с галерей товаров</p>
+					<button class="item-price btn" type="button">10 000 р.</button>
+				  </div>
+				</article>
+				<ul class="paginator">
+				  <li class="active"><a href="">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a class="next" href="#">Следующая</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+			<div class="map">
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.320894615736744!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460382549820"
+			   width="900" height="410" style="border:0" allowfullscreen></iframe>
+			  <section class="map-form">
+				<h3>NЁRDS DESIGN STUDIO</h3>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a class="btn btn-pop-up" href="#">Напишите нам</a>
+			  </section>
+			</div>
+			<div class="map-form">
+			  <button class="btn" type="button"></button>
+			  <form>
+				<div class="form-column">
+				  <label for="name-id">Ваше имя:</label>
+				  <input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста" required>
 				</div>
-				<div class="section">
-					
-				</div>
-				<div class="section">
-					
-				</div>
-				<div class="section">
-					
-				</div>
-				<div class="section">
-					
-				</div>
-			</section>
-			
-			
-			
-			
-			
-		</div>
-
-	</main>
-		<div class="map">
-			<div class="address">
-				<h5>NЁRDS DESIGN STUDIO</h5>
-				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8,</p>
-				<span>тел. +7 (812) 275-75-75</span>
-				<button onclick="button">напишите нам</button>
+				<div class="form-column">
+				  <label for="email-id">Ваш e-mail:</label>
+				  <input type="text" name="email" id="email-id" placeholder="Для отправки ответа" required>
+			  </div>
+			  <label for="text">Текст письма:</label>
+			  <textarea name="text-letter" id="text-letter-id" placeholder="В свободной форме"></textarea>
+			  <button class="btn" type="submit" name="send">Отправить</button>
+			  </form>
 			</div>
 		</div>
-
+	</main>
 	<footer>
-		<div class="container">
-			<i></i>
-			<i></i>
-			<i></i>
-			<h5>Давайте дружить, это выгодно!</h5>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+		<div class="container clearfix">
+			<div class="social-block">
+			  <a class="social-btn" href="#"></a>
+			  <a class="social-btn" href="#"></a>
+			  <a class="social-btn" href="#"></a>
+			</div>
+			<div class="promo-block">
+			  <h2>Давайте дружить, это выгодно!</h2>
+			  <p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
 		</div>
 	</footer>
 	

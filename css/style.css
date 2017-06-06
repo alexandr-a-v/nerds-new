@@ -448,90 +448,76 @@ template {
 * {
 	margin: 0;	
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	font-size: 16px;
+	line-height: 24px;
 }
 header {
 	width: 100%;
 	background-color: #eeeeee;
 }
 .container {
-	width: 1165px;
+	width: 1160px;
 	margin: 0 auto;
 }
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
 .logo {
-	padding-top: 48px;
+	padding-top: 49px;
 	float: left;
-	padding-bottom: 17px;
+	padding-bottom: 2px;
 }
 nav {
-    float: right;
-    width: 560px;
-	height:50px;
+    float: left;
     margin-top: 85px;
+	padding-left: 155px;
+}
+a {
+	color: #000000;
+	font-size: 16px;
+	line-height: 30px;
+	
 }
 ul {
-
+	list-style: none;
+}
+ul a:link {
+	color: #000000;
+}
+ul a:active {
+	color: #a6a6a6;
+}
+ul a:hover {
+	color: #fb565a;
 }
 li {
 	display: inline-block;
     vertical-align: top;
+	padding-left: 45px;
+}
+.basket {
+	width: 115px;
+	padding-left: 25px;
+	font-size: 16px;
+	float: right;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 30px;
+	background: none;
+	border: none;
+	background-image: url(../img/cart-icon.png);
+	background-repeat: no-repeat;
 }
 h1 {
 	font-family : Roboto medium;
 	font-size: 55px;
-}
-.slaides {
-	min-height: 300px;
-	clear: both;
-    position: relative;
-}
-.controls {
-	position: absolute;
-    left: 50%;
-    bottom: 45px;
-    z-index: 10;
-    width: 50px;
-    height: 15px;
-    margin-left: -85px;
-}
-.slide button {
-	padding: 10px 70px;
-    border-radius: 4px;
-    background: #fb565a;
-    color: #fff;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-}
-.slde {
-	display: block;
-}
-.slide:nth-child(1) {
-	display:block;
-	background: url(../img/slide1.png);
-}
-.slide:nth-child(2) {
-	display:block;
-	background: url(../img/slide2.png) ;
-}
-.slide:nth-child(3) {
-	display:none;
-	background: url(../img/slide3.png) ;
-}
-input:nth-child(1):checked~.slide:nth-child(1) {
-	display: block;
-}
-input:nth-child(2):checked~.slide:nth-child(2) {
-	display: block;
-}
-input:nth-child(3):checked~.slide:nth-child(3) {
-	display: block;
-}
-
-section {
-	height: 400px;
-	margin-bottom: 30px;
-	margin-bottom: 50px;
-    padding-bottom: 50px;
+	line-height: 55px;
 }
 a {
 	text-decoration: none;
@@ -540,12 +526,118 @@ a {
 article {
 	width: 100%;
 	background-color: #eeeeee;
+	margin-bottom: 80px;
+}
+.header-block{
+	height: 74px;
+	padding-bottom: px;
+}
+.slider-block  h2 {
+   font-size: 55px;
+   font-weight:500;
+   margin-bottom: 40px;
+
+}
+.slider-block p {
+	font-size: 16px;
+	color: #283136;
+	margin-bottom: 40px;
+}
+.buttons {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 2px;
+}
+.button-1{
+	background-color: #fb565a;
+	width: 240px;
+	height: 38px;
+	padding-top: 12px;	
+}
+.button-1:hover {
+	background-color: #e74246;
+}
+.button-1:active {
+	background-color: #d7373b;
+	color: #e37376;
+	box-shadow: inset 0.0 3px #c13135;
+}
+.slider-block {
+	position: relative;	
+}
+.slider-block input[type=radio] {
+	position: absolute;
+	opacity: 0;
+}
+.slider-controls {
+	position: absolute;
+	bottom:80px;
+    left:50%;
+    width:200px;
+    height:20px;
+    margin-left:-100px;
+    text-align:center;
+    z-index:1000;
+}
+.slider-controls label{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:0 3px;
+    background:white;
+    border:3px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+ } 
+ #btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+    background:#c1c1c1;
+} 
+
+.slider-1,
+.slider-2,
+.slider-3 {
+	display: none;
+	min-height: 395px;
+	padding-top: 30px;
+	
+}
+#btn-1:checked ~ .slider-1 { 
+    display: block;
+}
+#btn-2:checked ~ .slider-2 { 
+    display: block;
+}
+#btn-3:checked ~ .slider-3 { 
+    display: block;
+}    
+
+.slider-1 {
+	background: url(../img/slide1.png) no-repeat;
+	background-position:100% 5px;
+}	
+.slider-2 {
+	background: url(../img/slide2.png) no-repeat;
+	background-position:97% 0px;
+}
+.slider-3 {
+	background: url(../img/slide3.png) no-repeat;
+	background-position:100% 13px;
+}
+
+section {
+	height: 400px;
+	margin-bottom: 30px;
 	margin-bottom: 50px;
     padding-bottom: 50px;
 }
-
-
-
 
 
 
@@ -553,31 +645,69 @@ article {
 
 .advantages {
 	width:300px;
-	min-height: 300px;
 	float: left;
-	margin-right: 70px;
+	margin-right: 64px;
 
+}
+h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 30px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+.advantages button {
+	padding: 10px 40px;
+    border-radius: 4px;
+    background: #fb565a;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+	text-transform: uppercase;
+	margin-top: 35px;
+}
+.advantages:nth-child(2) button {
+	background: #00ca74;
+}
+.advantages:nth-child(3) button {
+	background: #efc84a;
 }
 .studio {
 	border-top: 2px solid #eee;
-	padding-top: 50px;
-	min-height:600px;
+	padding-top: 75px;
 	margin-bottom: 50px;
     padding-bottom: 50px;
 	border-bottom: 2px solid #eee;
 }
 .text {
-	width:60%;
+	width:58%;
 	min-height: 500px;
 	float: left;
+}
+h3 {
+	font-size: 45px;
+	line-height: 45px;
+	margin-bottom: 35px;
+}
+.text ul li {
+	position: relative;
+}
+.text ul li:before {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 3px;
+	background-color: #fb565a;
+	top: 25px;
+	left: 1px;
 }
 h4 {
 	text-transform: uppercase;
 }
-.class {
+.block {
 	width:40%;
 	min-height: 500px;
-	background-color: gray;
 	float: left;
 }
 .white-block {
@@ -586,39 +716,34 @@ h4 {
 	border-bottom: 2px solid #eee;
 }
 .logo_s {
-	display: inline-block;
+	float: left;
 	border-right: 2px solid #eeeeee;
 }
 .map {
-	width : 100%;
-	display : flex;
-	height : 416px;
-	margin-top : 80px;
-	background: url(../img/map.png);
+	position: relative;
+	width: 100%;
+	height: 415px;
+	background: url(../img/map.png) 0 0 no-repeat;
+	-webkit-background-size: auto;
+	background-size: 100%;
 }
-
-.address {
+iframe {
+	width: 100%;
+	height: 415px;
+}
+.map-form {
+	position: absolute;
+	top: 55px;
+	width: 320px;
+	height: auto;
+	z-index: 10;
+	padding: 50px 52px 52px 52px;
 	background-color: #ffffff;
-	display : block;
-	width : 319px;
-	height: 308px;
-	margin-left : 140px;
-	margin-top : 54px;
 }
-.addres h5 {
-
-
+.social-block {
+	float: left;
 }
-.addres p {
-
+.slogan {
+	float: left;
 }
 
-.addres span {
-
-}
-.addres button {
-
-}
-footer {
-	min-height: 200px;
-}
