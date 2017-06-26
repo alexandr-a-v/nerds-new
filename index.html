@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/sprites.css">	
+	<link rel="stylesheet" href="css/style.css">	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<title>Nerds</title>
 </head>
@@ -21,9 +20,7 @@
 					<li><a href="#" target="_blank">контакты</a></li>
 				</ul>
 			</nav>
-			<div class="basket">
-				<button>корзина</button>
-			</div>
+			<button class="basket">корзина</button>
 		</div>
 	</header>
 	<main>
@@ -96,9 +93,22 @@
 							<li>Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
-					<div class="block">
-						<div class="logo-block">
-							<img src="img/nerds-illustration.png" alt="nerds">
+					<div class="logo-block">
+						<img src="img/nerds-illustration.png" alt="nerds">
+						<h6>с 2004 года любим точность во всем:</h6>
+						<div class="statistics-block clearfix">
+							<div class="statistics"><strong>146</strong>
+								<span>%</span>
+								<p>Уровень самоотдачи</p>
+							</div>
+							<div class="statistics"><strong>100</strong>
+								<span>%</span>
+								<p>Соблюдение  сроков</p>
+							</div>
+							<div class="statistics"><strong>50</strong>
+								<span>%</span>
+								<p>Минимальная предоплата</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -135,15 +145,29 @@
 				<p>тел. +7 (812) 275-75-75</p>
 				<button  class="btn-modal">напишите нам</button>
 			</div>
+			<div class="modal">
+				<h2>Напишите нам</h2>
+				<div class="close">
+				</div>
+				<div>
+					<h3>Ваше имя:</h3>
+					<input type="text" class="mini_textarea" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div>
+					<h3>Ваш e-mail:</h3>
+					<input type="text"  class="mini_textarea" placeholder="Для отправки ответа">
+				</div>
+					<h3>Текст письма:</h3>
+					<textarea class="big_textarea" placeholder="В свободной форме"></textarea>
+					<button type="submit" class="btn_modal btn--long">отправить</button>
+			</div>
 		</div>
-
-
 	<footer>
 		<div class="container clearfix">
 			<div class="social-block">
-				<i></i>
-				<i></i>
-				<i></i>
+				<i class="social vk_icon"><a href="https://vk.com"></a></i>
+				<i class="social fb_icon"><a href="https://www.facebook.com"></a></i>
+				<i class="social insta_icon"><a href="https://www.instagram.com"></a></i>
 			</div>
 			<div class="slogan">
 				<h5>Давайте дружить, это выгодно!</h5>
@@ -151,6 +175,6 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="js/script.js"></script>
 </body>
 </html>
